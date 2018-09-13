@@ -1,0 +1,204 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>添加商品</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<style type="text/css">
+	  	body {
+				font: 14px/100% Arial, Verdana, "宋体";
+				 
+			}
+		.produce>b{
+		   padding:20px;
+		}
+		.tianjia{
+		 border: 1px solid peachpuff;
+		  margin-bottom: 20px;
+		  float:right;
+		  text-align: 30px;
+		  width: 100px;
+		  height: 40px;
+		  background: deeppink;
+		  color:white;
+		  font-size:16px;
+		  position: relative;
+		  right: 20px;
+		  cursor: pointer;
+		
+		}
+		.tianjia:hover{
+		 background:white;
+		 color:red;
+		}
+			
+		
+	</style>
+	
+	<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+		function isAdd(){
+			//创建xmlHttpRequest对象，前面没有var，说明是全局变量
+			xmlHttpRequest = new XMLHttpRequest();
+			//设置回调函数，函数中没有括号
+			xmlHttpRequest.onreadystatechange=callback;
+			//设置xmlHttpRequest对象的参数以及请求头
+			var url="UseDao";//请求的url
+			//与服务器连接
+			xmlHttpRequest.open("post", url);
+			//采用post方式请求需要设置请求头
+			xmlHttpRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+			//发送HTTP请求
+			var data = "flag=true";
+			xmlHttpRequest.send(data);
+		}
+			
+			function callback(){
+				if(xmlHttpRequest.readyState==4 && xmlHttpRequest.status==200){
+					//异步调用返回的数据
+					var flag = xmlHttpRequest.responseText;
+					alert(flag);
+					if($.trim(flag)=="true"){
+						$("#tip").html("添加成功！")
+					}else{
+						$("#tip").html("添加失败！")
+					}
+				}
+			}
+		
+	</script>
+
+  </head>
+  
+  <body>
+ 		<fieldset style="width: 600px; border: 2px solid deeppink;">
+		<legend>添加商品</legend>
+		<form class="produce" action="UseDao?target=addProduct" method="post" enctype="multipart/form-data">
+		<!--  <b>商品Id：</b><input type="text" value="输入id"  name="cid"/><br />-->
+		<b>商品名称：</b><input type="text" value="输入名称" name="cname" style=" border: 1px solid peachpuff; margin-bottom: 10px;"/><br />
+		<b>商品描述：</b><input type="text" value="输入描述" name="cdec" style=" border: 1px solid peachpuff; margin-bottom: 10px;"/><br />
+		<b>商品单价：</b><input type="text" value="输入单价" name="price" style=" border: 1px solid peachpuff; margin-bottom: 10px;"/><br />
+		<b>商品型号：</b><input type="text" value="输入型号" name="version" style=" border: 1px solid peachpuff; margin-bottom: 10px;"/><br />
+		<b>是否上架：</b><input type="text" value="0-下架 /1-上架" name="ground" style=" border: 1px solid peachpuff; margin-bottom: 10px;"/><br />
+		<b>库存数量：</b><input type="text" value="输入数量" name="quantity" style=" border: 1px solid peachpuff; margin-bottom: 10px;"/><br />
+		<b>上传图片：</b><input type="file" name="ps" style=" border: 1px solid peachpuff; margin-bottom: 10px;background:white"/><br />
+		<input type="submit" value="添 加" onclick="isAdd()"class="tianjia"/><font color="red" id="tip" ></font>
+		</form>
+		</fieldset>
+		
+		
+		<script type="text/javascript">
+			var a ;
+			window.onload=function(){
+				a= document.getElementsByTagName("input")
+				a[0].onfocus=checkIn0;
+				a[0].onblur=checkOut0;
+				a[1].onfocus=checkIn1;
+				a[1].onblur=checkOut1;
+				a[2].onfocus=checkIn2;
+				a[2].onblur=checkOut2;
+				a[3].onfocus=checkIn3;
+				a[3].onblur=checkOut3;
+				a[4].onfocus=checkIn4;
+				a[4].onblur=checkOut4;
+				a[5].onfocus=checkIn5;
+				a[5].onblur=checkOut5;
+				//a[6].onfocus=checkIn6;
+				//a[6].onblur=checkOut6;
+			}
+/************************************************************************/			
+		/*	function checkIn0(){
+				if(a[0].value=="输入id"){
+					a[0].value="";
+				}
+			}
+			function checkOut0(){
+				if(a[0].value==""){
+					a[0].value="输入id";
+				}
+			}
+		*/
+/************************************************************************/			
+			function checkIn0(){
+				if(a[0].value=="输入名称"){
+					a[0].value="";
+				}
+			}
+			function checkOut0(){
+				if(a[0].value==""){
+					a[0].value="输入名称";
+				}
+			}
+/*************************************************************************/
+			function checkIn1(){
+				if(a[1].value=="输入描述"){
+					a[1].value="";
+				}
+			}
+			function checkOut1(){
+				if(a[1].value==""){
+					a[1].value="输入描述";
+				}
+			}
+/*************************************************************************/
+			function checkIn2(){
+				if(a[2].value=="输入单价"){
+					a[2].value="";
+				}
+			}
+			function checkOut2(){
+				if(a[2].value==""){
+					a[2].value="输入单价";
+				}
+			}
+/*************************************************************************/
+			function checkIn3(){
+				if(a[3].value=="输入型号"){
+					a[3].value="";
+				}
+			}
+			function checkOut3(){
+				if(a[3].value==""){
+					a[3].value="输入型号";
+				}
+			}
+/**************************************************************************/
+			function checkIn4(){
+				if(a[4].value=="0-下架 /1-上架"){
+					a[4].value="";
+				}
+			}
+			function checkOut4(){
+				if(a[4].value==""){
+					a[4].value="0-下架 /1-上架";
+				}
+			}
+/**************************************************************************/
+				function checkIn5(){
+				if(a[5].value=="输入数量"){
+					a[5].value="";
+				}
+			}
+			function checkOut5(){
+				if(a[5].value==""){
+					a[5].value="输入数量";
+				}
+			}
+/**************************************************************************/
+		</script>
+  </body>
+  </fieldset>
+</html>

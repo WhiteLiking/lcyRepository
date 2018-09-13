@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>myProductManager</display-name>
+	<servlet id="Servlet_1535957170042">
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.servlet.CustomerRegister</servlet-class>
+	</servlet>
+	<servlet-mapping id="ServletMapping_1535957169932">
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/RegisterServlet</url-pattern>
+	</servlet-mapping>
+	<servlet id="Servlet_1535957170882">
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>com.servlet.UserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping id="ServletMapping_1535957167582">
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/UserServlet</url-pattern>
+	</servlet-mapping>
+	<servlet id="Servlet_1535957170902">
+		<servlet-name>Page</servlet-name>
+		<servlet-class>com.servlet.PageInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping id="ServletMapping_1535957169952">
+		<servlet-name>Page</servlet-name>
+		<url-pattern>/Info</url-pattern>
+	</servlet-mapping>
+	
+	<servlet id="Servlet_1535957170912">
+		<servlet-name>manager</servlet-name>
+		<servlet-class>com.servlet.Manager</servlet-class>
+	</servlet>
+	<servlet-mapping id="ServletMapping_1535957169962">
+		<servlet-name>manager</servlet-name>
+		<url-pattern>/Manager</url-pattern>
+	</servlet-mapping>
+	
+	<servlet id="Servlet_1535957170932">
+		<servlet-name>useDao</servlet-name>
+		<servlet-class>com.servlet.UseDao</servlet-class>
+	</servlet>
+  
+	<servlet-mapping id="ServletMapping_1535957169963">
+		<servlet-name>useDao</servlet-name>
+		<url-pattern>/UseDao</url-pattern>
+	</servlet-mapping>
+	
+	<servlet id="Servlet_1535957170942">
+	  <servlet-name>TestServlet</servlet-name>
+	  <servlet-class>com.servlet.HeadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping id="ServletMapping_1535957169972">
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/HeadMainPage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet id="Servlet_1535957170952">
+	  <servlet-name>backLoginAndRegister</servlet-name>
+	  <servlet-class>com.servlet.backLoginAndRegister</servlet-class>
+  </servlet>
+  <servlet-mapping id="ServletMapping_1535957169982">
+    <servlet-name>backLoginAndRegister</servlet-name>
+    <url-pattern>/backLoginAndRegister</url-pattern>
+  </servlet-mapping>
+  
+   <servlet id="Servlet_1535957171022">
+	  <servlet-name>HeadMainServlet</servlet-name>
+	  <servlet-class>com.servlet.headMainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping id="ServletMapping_1535957169992">
+    <servlet-name>HeadMainServlet</servlet-name>
+    <url-pattern>/HeadMainServlet</url-pattern>
+  </servlet-mapping>
+	
+</web-app>

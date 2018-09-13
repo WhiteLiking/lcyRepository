@@ -1,0 +1,135 @@
+			#pay_body {
+				width: 100%;
+				height: 100%;
+				margin-top: -50px;
+				background-color: #F8F8F8;
+			}
+			
+			#wechatpay {
+				width: 65%;
+				height: 100%;
+				margin-left: 18%;
+				padding-top: 60px;
+			    padding-bottom: 80px;
+			    padding-left: 3%;
+			    background-color: #fff;
+			    border-top: 4px solid #f10180;
+			}
+			
+			#wcPay {
+				padding-top: 1%;
+				margin: 1% 30% 1% 43% ;
+			}
+			
+			#qr {
+				width: 60%;
+				margin-left: 35%;
+			}
+			
+			#QRcode {
+			    width: 260px;
+    			height: 260px;
+    			background-color: white;
+			}
+			
+			#pay_phone {
+				float: right;
+				margin-top: -45%;
+				margin-right: 13%;
+				display: none;	
+			}
+			
+			#pay_scan {
+				color: #f10180;
+				padding: 18px 10px;
+			    width: 227px;
+			    height: 45px;
+			    margin-top: 5%;
+			    margin-left: 35%;
+			    background-color: #fff;
+			    border-radius: 4px;
+				background-image: url(../img/pay_scan.jpg);
+				background-repeat: no-repeat;
+				background-position-x: 5%;
+				background-position-y: 45%;
+				border: 2px solid #f10180;
+				overflow: hidden;
+			    zoom: 1;
+			}
+			
+			#pay_scan>p{
+				margin-left: 30%;
+			}
+			
+			#total_payprice {
+				color: #F10180;
+				font-size: 50px;
+				margin-left: 35%;
+				margin-top: 2%;
+			}
+			
+			#pay_tip {
+				width: 70%;
+			}
+			
+			#tip {
+				position: relative;
+				left: 20%;
+				padding-top: 2%;
+				padding-left: 35%;
+				margin-top: 5%;
+				margin-bottom: 5%;
+				border-top: 1px solid #e6e5e5;
+			}
+			
+			#tip1>p {
+				background-image: url(../img/pay_tip.jpg);
+				background-repeat: no-repeat;
+				background-position-x: 95%;
+			}
+			
+			#tip_content {
+				width: 20%;
+				padding: 0.5% 1.5%;
+				border: 1px solid gainsboro;
+				position: absolute;
+				margin-top: -1%;
+				left: 46%;
+				display: none;
+				box-shadow:0px 1px 1px #c8c8c8 ;
+			}
+			
+			.tipArrow{ 
+				position:absolute; 
+				width:40px; 
+				height:40px; 
+				bottom:-40px; 
+				left:100px; 
+			}
+			
+			.tipArrow *{ 
+				display:block; 
+				border-width:10px; 
+				position:absolute; 
+				left: -30px;
+    			top: -98px;
+				border-style:solid dashed dashed dashed;   /*dashed适合IE6*/
+				font-size:0;   /*dashed适合IE6*/
+				line-height:0; 
+			}
+			.tipArrow em{
+				border-color: transparent transparent gainsboro;  /*将其他颜色与设为透明*/
+			}
+			.tipArrow span{
+				border-color: transparent transparent #FFF;   /*白色三角形盖住*/
+				top:-95px;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #26A9FB;
+			}
+			
+			a:hover {
+				color: #3CBDFF;
+			}

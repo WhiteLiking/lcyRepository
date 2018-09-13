@@ -1,0 +1,159 @@
+*{
+				margin: *;
+			}
+			.logo{
+				height: 80px;
+				border-bottom-style: solid;
+				border-bottom-color: #ADADAD;
+			}
+			.logo1{
+				width: 600px;		
+				height: 100px;
+				display: block;
+                text-align: center;
+			    float: left;
+			}
+			.botoon{
+				width: 1340px;
+				height: 120px;
+				/*background-color: #ADADAD;*/
+				text-align: center;
+				text-decoration: blink;
+				font-family:"Î¢ÈíÑÅºÚ" ;
+				font-weight: 100;
+			}
+			#body{
+				height: 550px;
+				background-color:#f8f4f400;
+			}
+			#zhuce{	
+			    width:1240px;			
+				margin: 0 auto;
+			/* 	background: url("img/loginPic.jpg")no-repeat; */
+			}
+			.bgimge {
+   			display: block;
+    		position: absolute;
+   			width: 420px;
+    		height: 370px;
+    		background: url(../../img/signPic.png)  no-repeat;
+    		margin-left: 150px;
+    		margin-top: 30px;
+			}
+			.loginTit{
+	   		line-height: 20px;
+	   		margin: 0px 120px 15px 30px	;	
+   			}
+   			.loginTit h1 {
+			font-weight: 400;
+			font-size: 20px;
+			color: #e31256;
+			}
+			.tosignup {
+   			float: right;
+  		  	color: #5c5656;
+			font-weight: lighter;
+			font-size: small;
+			}
+			
+			.col-md-8{
+			padding:10px 0px;
+			margin-right:50px;
+			width:460px;
+			float:right;
+			padding: 20px 0px;
+			-webkit-box-shadow: 0 0 4px rgba(0,0,0,.075);
+			box-shadow: 0 0 5px rgba(168, 14, 85, 0.22)
+			background: rgba(255, 255, 255, 0.9);
+			border: 1px solid #ededed;
+			margin-top: 30px;
+			}
+			#rgsbtn{
+	        border: 1px solid #F9477A;
+			display: inline-block;
+			font-family: inherit;
+			word-break: keep-all;
+			background: #F8296D;
+			white-space: nowrap;
+			font-weight: 400;
+			text-align: center;
+			font-weight: 700;
+			font-size: 14px;
+			cursor: pointer;
+			padding: 0 30px;
+			height: 30px;
+			color: #fff;
+			border: 0;
+			width:250px;
+			}
+			#rgsp{
+			   width:460px;
+			   margin: 20px;
+			   padding-left: 46px;
+			}
+			#rgsa{
+			 color: #ed145b;
+			 font-size: smaller;
+			}
+			.inp{
+			-webkit-box-shadow: none;
+			box-shadow: none;
+			border: 1px solid #CFCFCF;
+			background-color: #fff;
+			vertical-align: middle;
+			padding: 10px 30px;
+			line-height: 1.5;
+			font-size: 14px;
+			outline: 0;
+			height: 30px;
+			width: 200px;
+			cursor: pointer;
+			}
+			#inpt{
+			  margin: 0px 10px;
+			}
+			input[type="reset"], input[type="submit"], input[type="submit"] {
+			border: 1px solid #F9477A;
+			display: inline-block;
+			font-family: inherit;
+			word-break: keep-all;
+			background: #F8296D;
+			white-space: nowrap;
+			font-weight: 400;
+			text-align: center;
+			line-height: 40px;
+			font-weight: 700;
+			font-size: 14px;
+			cursor: pointer;
+			padding: 0 30px;
+			height: 40px;
+			color: #fff;
+			border: 0;
+			}
+			label{
+			
+			width: 6em;
+			display: inline-block;
+			text-align: right;
+			margin-right: 20px;
+			color: rgba(77, 70, 70, 0.9);
+			}
+			.bint{
+			color: rgba(21, 14, 14, 0.7);
+			font-weight: lighter;
+			}
+			#btn1{
+			   width:80px;
+			   height: 28px;
+			   cursor: pointer;
+			   color: white;
+			   background-color: red;
+			   border: 1px solid #F9477A;
+  			   box-shadow: 0 0 20px rgba(132, 35, 14, 0.22);
+			}
+			span{
+				margin: 5px;
+			}
+			
+			
+		

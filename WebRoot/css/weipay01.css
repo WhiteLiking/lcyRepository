@@ -1,0 +1,49 @@
+*{margin: 0;padding: 0;font-style: normal;list-style: none;}
+#header {padding-top: 1%;}
+a{text-decoration: none;}
+a:hover{color: #F10180;}
+em{color: #666;}
+.comwidth{width: 960px;margin: 0 auto;}
+
+.tijiao{height:40px;}
+.tijiao img{float: left;overflow: hidden;}
+.tijiao h3{float: left;margin-top: -2px;padding-left: 10px;}
+.daojishi{height: 40px;margin-top: 20px;position: relative;}
+.daojishi em {color: #666;line-height: 40px;}
+.daojishi a {color: #666;line-height: 40px;}
+.time-item{position: absolute;width:360px; height: 40px;left: 200px;top: 10px;}
+#minute_show,#second_show{color: #C71C60;}
+.daifu{width: 120px;height: 40px;position: absolute;right: 0;margin-top: -30px;}
+.daifu strong{color: #F10180; float: right;font-size: 18px;padding-bottom: 5px;}
+.lijian{height: 38px;line-height: 38px;background: #fffaf3;border:  1px solid #F9DFBA;margin-top: 20PX;}
+.lijian em{padding-left: 10px;}
+.xian{height: 10px;border-radius: 5px;background: #d4d4d4;margin-top: 20px;}
+
+
+.dy0{height: 60px;border-bottom: 1px solid #CCCCCC;margin-top: 30px;}
+.dy1{width: 120px;height: 60px;line-height: 65px;float: left;border-radius: 3px;}
+#btn{padding: 15% 17%; font-size: 10px; color: #808080;border-radius: 3px; border: 1px solid #C8C8C8;background-color: #cbcaca;}
+#btn:hover {cursor: pointer;}
+.dy2{width: 119px;height: 60px ;border-bottom: none;background-color: white; line-height: 63px;margin-left: 10px;float: left; border-radius: 3px; position: relative;top: 5%;}
+#btn2{padding: 15% 17%; border: 1px solid #C8C8C8;border-radius: 3px; border-bottom: hidden; font-size: 10px;color: #808080; }
+#btn2:hover {cursor: pointer;}
+.A{width: 200px;height: 20px;line-height: 60px;float: right;}
+.A h5{color: lightskyblue;}
+
+.B{display: none; margin-top: -8px;}
+.A:hover .B{display: block;}
+.dy3{height: 160px;border-bottom: 1px solid #CCCCCC;}
+.dy4{width: 800px;height: 80px;float: left;margin-top: 20px;}
+.dy4 div{width: 140px; margin-left: 111px;margin-top: 1%;float: left;cursor: pointer; border: 1px solid #C8C8C8;border-radius: 5px;}
+.qianwang{height: 120px;margin-top: 20px;}
+.dy6{width: 155px;height: 55px;float: left;background: #F10180;border-radius: 3px;}
+.dy6 a{color: white;position: relative;left: 26%; top: 26%;}
+.dy7 a{padding-left: 30px;color: #F10180;line-height: 40px;}
+.huodao{margin-top: -22px; margin-bottom: 110px; width: 500px;height: 40px;}
+
+
+
+
+
+
+
